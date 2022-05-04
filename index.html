@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Vex Calculator</title>
+
+    <!--Cabecalho Vex -->
+    <body>
+    <header class="cabecalho">
+      <img class="cabecalho-imagem" src="logo.png" alt="Developer Heredia">
+      <nav class="cabecalho-menu">
+        <a class="cabecalho-menu-item" href="https://discord.gg/Fw4AHwEE5M">Discord</a>
+        <a class="cabecalho-menu-item" href="https://www.instagram.com/devheredia/?hl=pt-br">Instagram</a>
+        <a class="cabecalho-menu-item" href="https://www.linkedin.com/in/vin%C3%ADcius-her%C3%A9dia-1a6088233/">Linkedin</a>
+        <a class="cabecalho-menu-item" href= "https://github.com/devheredia">GitHub</a>
+        
+      </nav>
+    </header>
+
+    <!-- Fim do Cabecalho-->
+    <!-- conteudo do meio -->
+    <main class="conteudo">
+        <section class="conteudo-principal">
+          <div class="conteudo-principal-escrito">
+            <h1 class="conteudo-principal-escrito-titulo">Vex Calculator</h1>
+            <h2 class="conteudo-principal-escrito-subtitulo"> A melhor do mercado, tem nome!</h2>
+            <button class="conteudo-principal-escrito-botao"> Compre aqui! </button>
+          </div>
+         
+        </section>
+
+         <!-- Bom, a calculadora.-->
+         <div class="calculadora">
+            <h1 class="calculadora-one">                
+            </h1>
+            <p id="resultado"></p>
+            <table>
+                <tr>
+                    <td><button class="botao" onclick="clean()">C</button></td>
+                    <td><button class="botao" onclick="back()"><</button></td>
+                    <td><button class="botao" onclick="insert('/')">/</button></td>
+                    <td><button class="botao" onclick="insert('*')">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('7')">7</button></td>
+                    <td><button class="botao" onclick="insert('8')">8</button></td>
+                    <td><button class="botao" onclick="insert('9')">9</button></td>
+                    <td><button class="botao" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('4')">4</button></td>
+                    <td><button class="botao" onclick="insert('5')">5</button></td>
+                    <td><button class="botao" onclick="insert('6')">6</button></td>
+                    <td><button class="botao" onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="botao" onclick="insert('1')">1</button></td>
+                    <td><button class="botao" onclick="insert('2')">2</button></td>
+                    <td><button class="botao" onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="botao" style="width: 106px;" onclick="insert('0')">0</button></td>
+                    <td><button class="botao" onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+          
+        </section>
+  
+
+</head>
+<script type="text/javascript" src="script.js"></script>
+</body>
+
+
+
+<footer class="rodape">
+    
+
+
+  </footer>
+
+
+</body>
+</html>
